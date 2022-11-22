@@ -29,7 +29,7 @@ int main()
 	//finding the distances
 	double distance1 = 0;
 	double distance2 = 0;
-	for (int i = 0; i < size1 * 2 - 2; i += 2)
+	for (int i = 0; i < size1 * 2 - 2; i += 2)//distance1
 	{
 		int distA = coords1[i + 2] - coords1[i];
 		if (distA < 0)
@@ -43,7 +43,7 @@ int main()
 		}
 		distance1 += sqrt(distA * distA + distB * distB);
 	}
-	for (int i = 0; i < size2 * 2 - 2; i += 2)
+	for (int i = 0; i < size2 * 2 - 2; i += 2)//distance2
 	{
 		int distA = coords2[i + 2] - coords2[i];
 		if (distA < 0)
